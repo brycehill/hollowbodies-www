@@ -60,3 +60,31 @@ nav a {
 nav a:hover {
     color: rgba(255, 0, 200, 0.83);
 }
+
+@media (max-width:900px) {
+    p {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 3.8em;
+        height: 60px;
+    }
+    p {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width:480px) {
+    h1 {
+        font-size: 2.8em;
+        height: 45px;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+}
+
