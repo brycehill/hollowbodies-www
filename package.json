@@ -1,0 +1,9 @@
+{
+  "name": "hollowbodies-www",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.3",
+    "normalize.css": "^3.0.3"
+  }
+}

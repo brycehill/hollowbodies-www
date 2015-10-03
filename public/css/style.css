@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('../fonts/LeagueSpartan-Bold.otf');
+}
+
+body {
+  display: flex;
+  font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #522C1C;
+  background-color: #F7F2EB
+}
+
+a {
+  color: #00b7ff;
+}
+
+p {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+header {
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+    font: 5em 'LeagueSpartan';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.nav-icon {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.icon-path path {
+    fill: #522C1C;
+}
+
+nav a:hover .icon-path path {
+    fill: rgba(255, 0, 200, 0.83);
+}
