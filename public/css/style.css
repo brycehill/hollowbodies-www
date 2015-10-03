@@ -19,8 +19,8 @@ p {
     font-weight: 300;
 }
 
-header {
-
+.header-wrapper {
+    display: inline-block;
 }
 
 .container {
@@ -31,21 +31,26 @@ header {
 }
 
 h1 {
+    height: 80px;
     margin: 0;
     font: 5em 'LeagueSpartan';
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.nav-icon {
-    height: 1.5em;
-    width: 1.5em;
+nav {
+    position: relative;
+    right: 6px;
+    float: right;
 }
 
-.icon-path path {
-    fill: #522C1C;
+nav a {
+    position: relative;
+    bottom: 1px;
+    color: #522C1C;
+    text-decoration: none;
 }
 
-nav a:hover .icon-path path {
-    fill: rgba(255, 0, 200, 0.83);
+nav a:hover {
+    color: rgba(255, 0, 200, 0.83);
 }
