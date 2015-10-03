@@ -4,10 +4,18 @@
 }
 
 body {
-  display: flex;
   font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #522C1C;
-  background-color: #F7F2EB
+  background-color: #F7F2EB;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
 }
 
 a {
@@ -24,10 +32,8 @@ p {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    margin: auto;
+    height: 400px;
+    margin: 100px auto;
 }
 
 h1 {
@@ -40,7 +46,7 @@ h1 {
 
 nav {
     position: relative;
-    right: 6px;
+    right: 8px;
     float: right;
 }
 
