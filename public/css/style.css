@@ -7,15 +7,6 @@ body {
   font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #918350;
   background-color: #F7F2EB;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
 }
 
 a {
@@ -25,6 +16,12 @@ a {
 p {
     font-size: 2em;
     font-weight: 300;
+    padding: 0 10px;
+}
+
+header {
+  padding: 0 10px;
+  text-align: center;:w
 }
 
 .header-wrapper {
@@ -32,16 +29,14 @@ p {
 }
 
 .container {
-    /*height: 400px;*/
-    width: 1200px;
-    /* margin: 100px auto; */
-    padding: 0 30px;
+    max-width: 960px;
+    margin: auto auto;
+    padding-top: 10px;
 }
 
 h1 {
-    height: 80px;
     margin: 0;
-    font: 5em 'LeagueSpartan';
+    font: 7em 'LeagueSpartan';
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -53,6 +48,7 @@ h1 a:hover {
 nav {
     position: relative;
     right: 8px;
+    bottom: 1em;
     float: right;
 }
 
@@ -63,35 +59,73 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    color: rgba(255, 0, 200, 0.83);
+nav a:hover, a:hover {
+    color: #A7C4C0;
 }
 
-@media (max-width:900px) {
-    p {
-        font-size: 1.6em;
-    }
+a:focus: {
+  outline: 1px solid #A7C4C0;
 }
 
-@media (max-width:768px) {
-    h1 {
-        font-size: 3.8em;
-        height: 60px;
-    }
-    p {
-        font-size: 1.6em;
-    }
+a {
+  text-decoration: none;
+  color: #522C1C;
 }
 
-@media (max-width:480px) {
-    h1 {
-        font-size: 2.8em;
-        height: 45px;
-    }
+.bold {
+  font-weight: 600;
+}
 
-    p {
-        font-size: 1.3em;
-    }
+.content-wrapper {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 980px) /* Desktop */ {
+  form {
+    height: 50px;
+  }
+}
+
+@media screen  and (max-width: 979px) /* Tablet */ {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    letter-spacing: 1px;
+    font-size: 5em;
+  }
+
+  .content-wrapper {
+    margin: auto auto;
+    max-width: 710px;
+  }
+}
+
+@media screen  and (max-width: 725px) /* Tablet */ {
+  h1 {
+    letter-spacing: 1px;
+    font-size: 5em;
+  }
+ }
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  body {
+    font-size: 0.6em;
+  }
+  .container {
+    width: 100%;
+  }
+  .content-wrapper {
+    margin: auto auto;
+  }
+  h1 {
+    letter-spacing: 0;
+    font-size: 3.7em;
+  }
+  form {
+    height: 40px;
+  }
 }
 
 .table {
@@ -110,14 +144,14 @@ nav a:hover {
 }
 
 form {
-  height: 50px;
-  max-width: 735px;
+  max-width: 705px;
   display: flex;
   flex-direction: row;
+  padding: 0 10px;
 }
 
 input {
-  height: 100%;
+  color: #777572;
   flex: 2;
   padding: 0 10px;
   font-size: 1.4em;
@@ -125,8 +159,10 @@ input {
   border: none;
   border-radius: 4px 0 0 4px;
 }
+
 input[type=button] {
   background-color: #A7C4C0;
+  font-weight: 400;
   color: #F7F2EB;
   height: 100%;
   text-transform: uppercase;
@@ -134,6 +170,11 @@ input[type=button] {
   padding: 10px;
   border-radius: 0 4px 4px 0;
 }
+
+input[type=button]:hover {
+  background-color: rgb(148, 177, 173);
+}
+
 input:focus {
   outline: 1px solid #A7C4C0;
 }
