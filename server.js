@@ -12,7 +12,6 @@ app.use(favicon(__dirname + '/public/favicon.ico'));
 app.get('/', function (req, res) {
   res.render('home')
 })
-})
 
 var server = app.listen(3000, function () {
   var host = server.address().address
