@@ -5,7 +5,7 @@
 
 body {
   font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #522C1C;
+  color: #918350;
   background-color: #F7F2EB;
   display: flex;
   display: -webkit-flex;
@@ -32,8 +32,10 @@ p {
 }
 
 .container {
-    height: 400px;
-    margin: 100px auto;
+    /*height: 400px;*/
+    width: 1200px;
+    /* margin: 100px auto; */
+    padding: 0 30px;
 }
 
 h1 {
@@ -42,6 +44,10 @@ h1 {
     font: 5em 'LeagueSpartan';
     text-transform: uppercase;
     letter-spacing: 4px;
+}
+
+h1 a:hover {
+  color: #522C1C;
 }
 
 nav {
@@ -88,3 +94,46 @@ nav a:hover {
     }
 }
 
+.table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.row {
+  display: table-row;
+}
+
+.row > * {
+  display: table-cell;
+  padding: 0 10px 0 0;
+}
+
+form {
+  height: 50px;
+  max-width: 735px;
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  height: 100%;
+  flex: 2;
+  padding: 0 10px;
+  font-size: 1.4em;
+  font-weight: 200;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+input[type=button] {
+  background-color: #A7C4C0;
+  color: #F7F2EB;
+  height: 100%;
+  text-transform: uppercase;
+  flex: 1;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+input:focus {
+  outline: 1px solid #A7C4C0;
+}
