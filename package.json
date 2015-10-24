@@ -2,6 +2,11 @@
   "name": "hollowbodies-www",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "dev": "npm start; npm run browser",
+    "start": "nodemon server.js",
+    "browser": "browser-sync start --proxy 'localhost:3000' --files 'public/css/*.css'"
+  },
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
@@ -9,5 +14,9 @@
     "mailchimp-api": "^2.0.7",
     "normalize.css": "^3.0.3",
     "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "nodemon": "^1.7.1"
   }
 }
