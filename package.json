@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "npm start; npm run browser",
     "start": "nodemon server.js",
-    "browser": "browser-sync start --proxy 'localhost:3000' --files 'public/css/*.css'"
+    "browser": "browser-sync start --proxy 'localhost:3000' --files 'public/css/*.css'",
+    "build": "browserify public/js/signup.js -t babelify --outfile public/dist/bundle.js",
+    "watch": "watchify public/js/*.js -t babelify -o public/dist/bundle.js",
+    "clean": "rm public/dist/*"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
@@ -13,9 +16,11 @@
     "express-handlebars": "^2.0.1",
     "mailchimp-api": "^2.0.7",
     "normalize.css": "^3.0.3",
+    "ramda": "^0.18.0",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
+    "babelify": "^6.4.0",
     "browser-sync": "^2.9.11",
     "nodemon": "^1.7.1"
   }
