@@ -160,7 +160,7 @@ input {
   border-radius: 4px 0 0 4px;
 }
 
-input[type=button] {
+input[type=submit] {
   background-color: #A7C4C0;
   font-weight: 400;
   color: #F7F2EB;
@@ -171,7 +171,7 @@ input[type=button] {
   border-radius: 0 4px 4px 0;
 }
 
-input[type=button]:hover {
+input[type=submit]:hover {
   background-color: rgb(148, 177, 173);
 }
 
