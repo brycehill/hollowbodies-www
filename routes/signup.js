@@ -14,10 +14,14 @@ exports.post = function(req, res) {
     mc.lists.subscribe({
         id: config.mailchimp.list.id,
         email: { email: email }
-    }, function() {
-        console.log('success!')
+    }, function(response) {
+        console.log('success!', response)
         res.json(200)
     }, function(err) {
-        res.json(err)
+        var errMap = {
+            'List_RoleEmailMember': 400,
+            'List_AlreadySubscribed': 409
+        }
+        res.status(errMap[err.name]).json(err)
     })
 }
