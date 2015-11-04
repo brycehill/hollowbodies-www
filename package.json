@@ -12,12 +12,15 @@
   },
   "dependencies": {
     "body-parser": "^1.14.1",
+    "data.task": "^3.0.0",
+    "email-validator": "^1.0.3",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "mailchimp-api": "^2.0.7",
     "normalize.css": "^3.0.3",
     "ramda": "^0.18.0",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "superagent": "^1.4.0"
   },
   "devDependencies": {
     "babelify": "^6.4.0",
