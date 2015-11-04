@@ -187,3 +187,6 @@ input:focus {
 #msg {
   margin: 10px;
 }
+#loader {
+  margin-left: 10px;
+}
